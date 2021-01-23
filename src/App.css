@@ -7,22 +7,4 @@
   grid-template-columns: 2fr 10fr;
 }
 
-.header {
-  grid-area: h;
-  background-color: rgb(6, 221, 221);
-}
 
-.header img {
-  height: 50px;
-  width: 50px;
-}
-
-.nav {
-  grid-area: n;
-  background-color: rgb(212, 212, 212);
-}
-
-.content {
-  grid-area: c;
-  background-color: rgb(189, 238, 230);
-}

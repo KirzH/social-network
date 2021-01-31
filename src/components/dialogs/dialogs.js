@@ -1,6 +1,6 @@
 import React from 'react';
 
-import a from './dialogs.module/css';
+import a from './dialogs.module.css';
 
 const Dialogs = () => {
     return (

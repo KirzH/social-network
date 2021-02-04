@@ -8,14 +8,14 @@ import { BrowserRouter ,Route } from 'react-router-dom';
 import './App.css';
 
 
-const App = () => {
+const App = (props) => {
   return (
     <BrowserRouter>
      <div className = "app">
        <Header />
        <Navbar />
        <div className= "app-wrapper-content ">
-         <Route path='/message' component={Dialogs} />
+         <Route path='/message' render={ () => <Dialogs messages={props.messages} dialogs={props.dialogs} /> }/>
          <Route path='/profile' component={Profile} />
        </div>  
      </div>

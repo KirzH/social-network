@@ -3,18 +3,13 @@ import React from 'react'
 import './my-posts.module.css'
 
 const MyPost = (props) => {
+
+    let postsElements = props.posts.map( d => 
+        <ProfileItem name={d.name} id={d.id}  />);
+
     return (
         <div>
-            <div><h3>myPost</h3></div>
-            <div>
-                <textarea></textarea>
-            </div>
-            <div>
-                <button>Add Post</button>
-            </div>
-            <div>newPost</div>
-            <div>post1</div>
-            <div>post2</div>
+            { postsElements }
         </div>
     )
 }

@@ -4,12 +4,12 @@ import './my-posts.module.css'
 
 const MyPost = (props) => {
 
-    let postsElements = props.posts.map( d => 
-        <ProfileItem name={d.name} id={d.id}  />);
+    // let postsElements = props.posts.map( d => 
+    //     <MyPost name={d.name} id={d.id}  />);
 
     return (
         <div>
-            { postsElements }
+            {/* { postsElements } */}
         </div>
     )
 }

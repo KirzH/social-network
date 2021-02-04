@@ -17,11 +17,10 @@ const App = (props) => {
        <div className= "app-wrapper-content ">
          <Route path='/message' 
                 render={ () => <Dialogs 
-                  messages={props.state.profilePage.messages} 
-                  dialogs={props.state.messagesPage.dialogs} /> }/>
+                  state={props.state.dialogsPage} /> }/>
          <Route path='/profile' 
                 render={ () => <Profile 
-                  posts={props.state.profilePage.posts} /> }/>
+                  state={props.state.profilePage} /> }/>
        </div>  
      </div>
     </BrowserRouter>

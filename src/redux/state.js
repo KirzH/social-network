@@ -6,16 +6,10 @@ let state = {
             {id: 3, message: 'Dont move', likesCount: 5},
             {id: 4, message: 'Be careful', likesCount: 5},
      ],
-     messages: [
-        {message: "Hi", id: "1"},
-        {message: "Good bye", id: "2"},
-        {message: "Hello World", id: "3"},
-        {message: "Hey, I'm Vadim", id: "4"},
-        {message: "Good bye", id: "5"}
- ]
+ 
    
     },
-    messagePage: {
+    dialogsPage: {
         dialogs: [
             {name: "Dmitry", id: "1"},
             {name: "Mikhail", id: "2"},
@@ -23,6 +17,13 @@ let state = {
             {name: "Ilya", id: "4"},
             {name: "Yulia", id: "5"},
      ],
+     messages: [
+        {message: "Hi", id: "1"},
+        {message: "Good bye", id: "2"},
+        {message: "Hello World", id: "3"},
+        {message: "Hey, I'm Vadim", id: "4"},
+        {message: "Good bye", id: "5"}
+ ]
   
     }
 }

@@ -1,17 +1,26 @@
-import React from 'react'
+import React from "react"
+import Post from "./post/post"
+import s from "./my-posts.module.css"
 
-import './my-posts.module.css'
+const MyPosts = props => {
+	let postsElements = props.posts.map(p => (
+		<Post message={p.message} likesCount={p.likesCount} />
+	))
 
-const MyPost = (props) => {
-
-    // let postsElements = props.posts.map( d => 
-    //     <MyPost name={d.name} id={d.id}  />);
-
-    return (
-        <div>
-            {/* { postsElements } */}
-        </div>
-    )
+	return (
+		<div>
+			<h3>My posts</h3>
+			<div>
+				<div>
+					<textarea></textarea>
+				</div>
+				<div>
+					<button>Add post</button>
+				</div>
+			</div>
+			<div>{postsElements}</div>
+		</div>
+	)
 }
 
-export default MyPost;
+export default MyPosts

@@ -1,16 +1,12 @@
 .dialogs {
-    display: grid;
+	display: grid;
     grid-template-columns: 2fr 10fr;
 }
 
-
-
 .dialogsItems .active {
-    color: rgb(30, 210, 69);
+	color: rgb(255, 0, 0);
 }
-
 
 .mesage {
-
+	
 }
-

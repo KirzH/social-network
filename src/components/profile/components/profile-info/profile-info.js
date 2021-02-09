@@ -6,7 +6,7 @@ const ProfileInfo = () => {
 	return (
 		<div>
 			<div>
-				<img src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg' />
+				<img src='https://avtoexperts.ru/wp-content/uploads/2019/06/bmw-x5-e70-sale-2.jpg' />
 			</div>
 			<div>ava+description</div>
 		</div>

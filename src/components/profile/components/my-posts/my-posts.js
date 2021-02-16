@@ -1,6 +1,6 @@
 import React from "react"
 import Post from "./post/post"
-import s from "./my-posts.module.css"
+// import s from "./my-posts.module.css"
 
 const MyPosts = props => {
 	let postsElements = props.posts.map(p => (

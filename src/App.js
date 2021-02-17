@@ -9,21 +9,20 @@ import "./App.css"
 
 const App = props => {
 	return (
-		<div className='app'>
+		<div className="app">
 			<Header />
 			<Navbar />
-			<div className='app-wrapper-content '>
+			<div className="app-wrapper-content ">
 				<Route
-					path='/message'
+					path="/message"
 					render={() => <Dialogs state={props.state.dialogsPage} />}
 				/>
 				<Route
-					path='/profile'
+					path="/profile"
 					render={() => (
 						<Profile
 							profilePage={props.state.profilePage}
-							addPost={props.addPost}
-							updateNewPostText={props.updateNewPostText}
+							dispatch={props.dispatch}
 						/>
 					)}
 				/>

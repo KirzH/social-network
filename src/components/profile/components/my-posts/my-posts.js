@@ -2,6 +2,11 @@ import React from "react"
 import Post from "./post/post"
 // import s from "./my-posts.module.css"
 
+import {
+	addPostActionCreator,
+	updateNewPostTextActionCreator,
+} from "../../../../redux/proofile-reducer"
+
 const MyPosts = props => {
 	let postsElements = props.posts.map(p => (
 		<Post message={p.message} likesCount={p.likesCount} />
@@ -9,12 +14,12 @@ const MyPosts = props => {
 	let newPostElements = React.createRef()
 
 	let addPost = () => {
-		props.dispatch({ type: "ADD-POST" })
+		props.dispatch(addPostActionCreator())
 	}
 
 	let onPostChange = () => {
 		let text = newPostElements.current.value
-		let action = { type: "UPDATE-NEW-POST-TEXT", newText: text }
+		let action = updateNewPostTextActionCreator(text)
 		props.dispatch(action)
 	}
 

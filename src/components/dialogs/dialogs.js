@@ -16,8 +16,8 @@ const Dialogs = props => {
 	let messagesElements = state.messages.map(m => (
 		<Message message={m.message} />
 	))
-	let newMessageBody = state.newMessageBody
-
+	let onMessageBody = state.messages.newMessageBody
+		// debugger
 	let onSendMessageClick = () => {
 		props.store.dispatch(sendMessageCreator())
 	}
@@ -35,7 +35,7 @@ const Dialogs = props => {
 				<div>
 					<textarea
 						placeholder="Enter your message"
-						// value={onMessageBody}
+						value={onMessageBody}
 						onChange={onNewMessageChange}
 					/>
 				</div>

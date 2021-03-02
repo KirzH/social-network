@@ -17,8 +17,8 @@ const Dialogs = props => {
 	let onSendMessageClick = () => {
 		props.sendMessage()
 	}
-	let onNewMessageChange = event => {
-		let body = event.target.value
+	let onNewMessageChange = e => {
+		let body = e.target.value
 		props.updateNewMessageBody(body)
 	}
 

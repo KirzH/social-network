@@ -1,4 +1,4 @@
-.app-wrapper {
+.app {
 	display: grid;
 	grid-template-areas:
 		"h h"
@@ -13,3 +13,4 @@
 	grid-area: c;
 	background-color: rgb(243, 193, 226);
 }
+
